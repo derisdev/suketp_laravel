@@ -9,17 +9,17 @@
     <!-- KOP SURAT -->
     <table border="0" align="center" style="margin-top: 10px;" width=90%>
         <tr>
-            <td width=14%><img src="{{ public_path('images/logo.png') }}" alt="" width="100" height="100">
+            <td width=14%><img src="{{ asset('images/logo.png') }}" alt="" width="100" height="100">
             </td>
             <td>
                 <center>
                     <font size="3">PEMERINTAH KABUPATEN GARUT</font> <br>
                     <font size="3">KECAMATAN CIKAJANG</font> <br>
                     <font size="5"><b>DESA MARGAMULYA</b></font> <br>
-                    <font size="3"><i>Jl.Raya Cikandang, Cikajang - Garut Kode Pos 44171</i></font>
+                    <font size="3"><i>Jl. Raya Simpang Cikandang No.846, Margamulya, Cikajang, Kabupaten Garut, Jawa Barat 44171</i></font>
                 </center>
             </td>
-            <td width=14%><img src="{{ public_path('images/puskesos.png') }}" alt="" width="100" height="100">
+            <td width=14%><img src="{{ asset('images/puskesos.png') }}" alt="" width="100" height="100">
             </td>
         </tr>
         <tr>
@@ -90,10 +90,10 @@
     <table border="0" align="center" width=83%>
         <tr>
             <td style="text-align: right; position:relative">
-                Margamulya, {{ $puskesos->updated_at->format('d F Y') }} <br>
-                Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$puskesos->ttd.'') }}" alt="" height="155" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br><br>
-                <p style="position:absolute; right:-90">{{ $puskesos->kades }}</p>
+            <div style="position: relative; left: -30px;">Margamulya, {{ $puskesos->updated_at->format('d F Y') }} <br>
+                Kepala Desa Margamulya</div>
+            <img src="{{ asset('ttdcap/'.$puskesos->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $puskesos->kades }}</p>
             </td>
         </tr>
     </table>

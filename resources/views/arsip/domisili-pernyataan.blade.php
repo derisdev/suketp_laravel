@@ -10,7 +10,7 @@
         <!-- IDENTITAS PENGAJU -->
         <tr>
             <td align="center" colspan="3">
-                <font size="3"><u><b>SURAT PERNYATAAN</b></u></font><br>
+                <font size="3"><u><b>SURAT PERNYATAAN MENETAP</b></u></font><br>
                 <font size="3">NO SURAT : {{ $ajuan->nosurat }}</font>
             </td>
         </tr>
@@ -97,7 +97,7 @@
     <table border="0" align="center">
         <tr>
             <td colspan="2" align="center">Mengetahui</td>
-            <td colspan="1" align="center">Bandung, {{ $ajuan->updated_at->format('d F Y') }}</td>
+            <td colspan="1" align="center">Garut, {{ $ajuan->updated_at->format('d F Y') }}</td>
         </tr>
         <tr>
             <td style="text-align:center; position:relative;" width=35%>
@@ -135,9 +135,11 @@
             </td>
             
             <td style="text-align:center; position:relative" width=80%>
-                Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$ajuan->ttd.'') }}" height="120" width="" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br><br>
-                <u style="text-align:center; line-height:0">{{ $ajuan->kades }}</u>
+            <div style="position: relative;
+            left: -30px;"> Margamulya, {{ $ajuan->updated_at->format('d F Y') }} <br>
+                Kepala Desa Margamulya</div>
+            <img src="{{ asset('ttdcap/'.$ajuan->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $ajuan->kades }}</p>
             </td>
         </tr>
         

@@ -66,10 +66,11 @@
     <table border="0" align="center" width=83%>
         <tr>
             <td style="text-align: right; position:relative">
-                Margamulya, {{ $ajuan->updated_at->format('d F Y') }} <br>
-                Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$ajuan->ttd.'') }}" alt="" height="132" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br>
-                <p style="position:absolute; right:-80">{{ $ajuan->kades }}</p>
+            <div style="position: relative;
+            left: -30px;"> Margamulya, {{ $ajuan->updated_at->format('d F Y') }} <br>
+                Kepala Desa Margamulya</div>
+            <img src="{{ asset('ttdcap/'.$ajuan->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $ajuan->kades }}</p>
             </td>
         </tr>
     </table>

@@ -6,7 +6,7 @@
             <div class="container card">
                 <div class="card-header">
                     <h4 class="card-title">Tambah Admin</h4>
-                    <h5 class="card-category mt-2">Tambah Admin Pengelola Website Desa Pinggirsari</h5>
+                    <h5 class="card-category mt-2">Tambah Admin Pengelola Website Desa Margamulya</h5>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -38,7 +38,7 @@
                                             </div>
                                             <div class="modal-body">
                                               <p class="text-center">Anda yakin ingin menjadikan <i>{{ $user->nama }}</i> sebagai <b>Admin</b> ?</p>
-                                              <small class="text-secondary">*tindakan ini akan membuat {{ $user->nama }} memiliki akses untuk mengelola Website Desa Pinggirsari.</small>
+                                              <small class="text-secondary">*tindakan ini akan membuat {{ $user->nama }} memiliki akses untuk mengelola Website Desa Margamulya.</small>
                                             </div>
                                             <div class="modal-footer">
                                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>

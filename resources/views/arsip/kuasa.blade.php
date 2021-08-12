@@ -162,8 +162,8 @@
             <td style="text-align: center; position:relative">
                 Mengetahui<br>
                 Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$ajuan->ttd.'') }}" alt="" height="129" align="center" style="position:absolute; top:10; right:0 "> <br><br><br><br>
-                <p  align="center">{{ $ajuan->kades }}</p>
+                <img src="{{ asset('ttdcap/'.$ajuan->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $ajuan->kades }}</p>
             </td>
         </tr>
     </table>

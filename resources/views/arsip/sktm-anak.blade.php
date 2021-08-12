@@ -9,14 +9,14 @@
     <!-- KOP SURAT -->
     <table border="0" align="center" style="margin-top:5px;" width=84%>
         <tr>
-            <td width=14%><img src="{{ public_path('images/logo.png') }}" alt="" width="85" height="85">
+            <td width=14%><img src="{{ asset('images/logo.png') }}" alt="" width="85" height="85">
             </td>
             <td>
                 <center>
                     <font size="3">PEMERINTAH KABUPATEN GARUT</font> <br>
                     <font size="3">KECAMATAN CIKAJANG</font> <br>
                     <font size="5"><b>DESA MARGAMULYA</b></font> <br>
-                    <font size="3"><i>Jl.Raya Cikandang, Cikajang - Garut Kode Pos 44171</i></font>
+                    <font size="3"><i>Jl. Raya Simpang Cikandang No.846, Margamulya, Cikajang, Kabupaten Garut, Jawa Barat 44171</i></font>
                 </center>
             </td>
         </tr>
@@ -163,10 +163,10 @@
     <table border="0" align="center" width=83%>
         <tr>
             <td style="text-align: right; position:relative">
-                Margamulya, {{ $sktm->updated_at->format('d F Y') }} <br>
-                Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$sktm->ttd.'') }}" alt="" height="132" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br>
-                <p style="position:absolute; right:-80">{{ $sktm->kades }}</p>
+            <div style="position: relative; left: -30px;">Margamulya, {{ $sktm->updated_at->format('d F Y') }} <br>
+                Kepala Desa Margamulya</div>
+            <img src="{{ asset('ttdcap/'.$sktm->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $sktm->kades }}</p>
             </td>
         </tr>
     </table>

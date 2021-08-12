@@ -9,14 +9,14 @@
     <!-- KOP SURAT -->
     <table border="0" align="center" style="margin-top: 10px;" width=84%>
         <tr>
-            <td width=14%><img src="{{ public_path('images/logo.png') }}" alt="" width="85" height="85">
+            <td width=14%><img src="{{ asset('images/logo.png') }}" alt="" width="85" height="85">
             </td>
             <td>
                 <center>
                     <font size="3">PEMERINTAH KABUPATEN GARUT</font> <br>
                     <font size="3">KECAMATAN CIKAJANG</font> <br>
                     <font size="5"><b>DESA MARGAMULYA</b></font> <br>
-                    <font size="3"><i>Jl.Raya Cikandang, Cikajang - Garut Kode Pos 44171</i></font>
+                    <font size="3"><i>Jl. Raya Simpang Cikandang No.846, Margamulya, Cikajang, Kabupaten Garut, Jawa Barat 44171</i></font>
                 </center>
             </td>
         </tr>
@@ -113,7 +113,7 @@
         <tr>
             <td>
                 <p style="text-align: justify;">
-                    Berdasarkan keterangan dari RT dan RW setempat benar bahwa yang bersangkutan Penduduk Desa Margamulya Kecamatan Arjasari Kabupaten BANDUNG dan yang bersangkutan :
+                    Berdasarkan keterangan dari RT dan RW setempat benar bahwa yang bersangkutan Penduduk Desa Margamulya Kecamatan Cikajang Kabupaten Garut dan yang bersangkutan :
                 </p>
                 <p style="text-align: center">
                     Benar memiliki {{ $sktb->memiliki }} di lokasi arjasari dengan luas <b>{{ $sktb->luas }}</b> atas nama sertifikat <b>{{ $sktb->pemilik }}</b> dengan harga kisaran <b>Rp. {{ $sktb->harga }}</b>
@@ -139,10 +139,10 @@
     <table border="0" align="center" width=83%>
         <tr>
             <td style="text-align: right; position:relative">
-                Margamulya, {{ $sktb->updated_at->format('d F Y') }} <br>
-                Kepala Desa Margamulya <br>
-                <img src="{{ public_path('storage/ttdcap/'.$sktb->ttd.'') }}" alt="" height="132" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br>
-                <p style="position:absolute; right:-80">{{ $sktb->kades }}</p>
+            <div style="position: relative; left: -30px;">Margamulya, {{ $sktb->updated_at->format('d F Y') }} <br>
+                Kepala Desa Margamulya</div>
+            <img src="{{ asset('ttdcap/'.$sktb->ttd).''}}" alt="" height="280" align="right" style="position:absolute; top:-30"> <br><br><br><br>
+            <p style="position:absolute; right:-170 !important;top:120">{{ $sktb->kades }}</p>
             </td>
         </tr>
     </table>

@@ -137,7 +137,7 @@
                 <p align="center">{{ $ajuan->user->nama }}</p>
             </td> --}}
             <td style="text-align:right;" width=35%>
-                Bandung, {{ $ajuan->updated_at->format('d F Y') }} <br>
+                Garut, {{ $ajuan->updated_at->format('d F Y') }} <br>
                 Yang membuat pernyataan,<br><br><br><br><br><br><br>
                 <u>{{ $ajuan->user->nama }}</u>
             </td>

@@ -9,14 +9,14 @@
     <!-- KOP SURAT -->
     <table border="0" align="center" style="margin-top: 10px;" width=84%>
         <tr>
-            <td width=14%><img src="{{ public_path('images/logo.png') }}" alt="" width="85" height="85">
+            <td width=14%><img src="{{ asset('images/logo.png') }}" alt="" width="85" height="85">
             </td>
             <td>
                 <center>
                     <font size="3">PEMERINTAH KABUPATEN GARUT</font> <br>
                     <font size="3">KECAMATAN CIKAJANG</font> <br>
                     <font size="5"><b>DESA MARGAMULYA</b></font> <br>
-                    <font size="3"><i>Jl.Raya Cikandang, Cikajang - Garut Kode Pos 44171</i></font>
+                    <font size="3"><i>Jl. Raya Simpang Cikandang No.846, Margamulya, Cikajang, Kabupaten Garut, Jawa Barat 44171</i></font>
                 </center>
             </td>
         </tr>
@@ -146,7 +146,7 @@
         <tr>
             <td style="text-align: right; position:relative">
                 Margamulya, Cikajang $ajuan-Garutupdated_at->format('d F Y') }} <br>
-                Kepala Desa Margamulya <br>Cikajang src=Garut public_path('storage/ttdcap/'.$ajuan->ttd.'') }}" alt="" height="132" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br>
+                Kepala Desa Margamulya <br>Cikajang src=Garut asset('storage/ttdcap/'.$ajuan->ttd.'') }}" alt="" height="132" align="right" style="position:absolute; top:10; right: 4 "> <br><br><br><br>
                 <p style="position:absolute; right:-80">{{ $ajuan->kades }}</p>
             </td>
         </tr>
